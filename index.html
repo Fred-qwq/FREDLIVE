@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到Fred的小空间</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>欢迎来到Fred的小空间</h1>
+        </header>
+        
+        <main>
+            <section id="daily-tasks" class="section">
+                <h2>每日任务</h2>
+                <div class="task-input">
+                    <input type="text" id="new-task" placeholder="添加新任务">
+                    <button onclick="addTask()">添加</button>
+                </div>
+                <ul id="task-list"></ul>
+            </section>
+
+            <section id="diary" class="section">
+                <h2>日记</h2>
+                <textarea id="diary-content" placeholder="今天发生了什么..."></textarea>
+                <button onclick="saveDiary()">保存</button>
+                <div id="diary-entries"></div>
+            </section>
+
+            <section id="schedule" class="section">
+                <h2>日程安排</h2>
+                <div class="schedule-input">
+                    <input type="datetime-local" id="schedule-time">
+                    <input type="text" id="schedule-event" placeholder="事件描述">
+                    <button onclick="addSchedule()">添加日程</button>
+                </div>
+                <div id="schedule-list"></div>
+            </section>
+
+            <section id="notes" class="section">
+                <h2>随手记</h2>
+                <div class="note-input">
+                    <textarea id="note-content" placeholder="记录一些想法..."></textarea>
+                    <button onclick="addNote()">添加笔记</button>
+                </div>
+                <div id="notes-list"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
