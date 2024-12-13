@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="background-overlay"></div>
     <div class="container">
         <header>
             <h1>欢迎来到Fred的小空间</h1>
+            <div class="hero-image">
+                <img src="images/berserk.jpg" alt="Berserk - Black Swordsman In The Forest" class="header-image">
+            </div>
         </header>
         
         <main>
@@ -47,7 +51,38 @@
                 </div>
                 <div id="notes-list"></div>
             </section>
+
+            <section id="contact" class="section">
+                <h2>联系方式</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="contact-icon">📱</i>
+                        <span class="contact-label">手机/微信：</span>
+                        <a href="tel:13613050969" class="contact-value">136-1305-0969</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="guestbook" class="section">
+                <h2>留言板</h2>
+                <div class="message-input">
+                    <input type="text" id="visitor-name" placeholder="你的名字">
+                    <textarea id="message-content" placeholder="说点什么吧..."></textarea>
+                    <button onclick="addMessage()">发送留言</button>
+                </div>
+                <div id="message-list"></div>
+            </section>
         </main>
+        <footer class="social-footer">
+            <div class="social-links">
+                <a href="https://space.bilibili.com/23870881" target="_blank" class="social-link">
+                    <img src="images/bilibili-logo.png" alt="bilibili" class="social-icon">
+                </a>
+                <a href="https://www.douyin.com/user/self" target="_blank" class="social-link">
+                    <img src="images/douyin-logo.png" alt="douyin" class="social-icon">
+                </a>
+            </div>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
